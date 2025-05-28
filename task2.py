@@ -32,11 +32,19 @@ appropriate use of return values and input parameters
 # a variable. We will use it as the basis for this 
 # assignment.
 
-while True:
-    y = keyboard.read_key()
-    print(y)
-    print(time.now())
-    t = time.localtime()
-    print(t)
-    print(time.strftime("%H",t))
-    break
+starttime = time.time()
+print("Type the character that shows up on screen.")
+letters = ["q","w","e","r","t","y","u","i","o","p"]
+x=0
+
+for x in range (0,10):
+    f = False
+    currentletter = letters[x]
+    print(currentletter)
+    while f == False:
+        z = keyboard.read_key()
+        if z == currentletter:
+            break
+currenttime = time.time()
+elapsed = currenttime - starttime
+print(f"Your elapsed time is {elapsed}")
