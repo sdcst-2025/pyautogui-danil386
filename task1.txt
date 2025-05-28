@@ -1,6 +1,7 @@
 example0.py
 Explain what it does. What do the different lines do?
 
+Line 13 finds the current epoch time and Line 18 prints it. Line 20 pauses the program for 3.5 seconds and Line 25 prints it. Line 26 finds the current epoch time. Line 27 finds how much time passed while the program was paused by subtracting the Line 13 epoch time from the Line 26 epoch time.
 
 
 
@@ -8,3 +9,7 @@ Explain what it does. What do the different lines do?
 example1.py
 Explain what it does. Give a brief summary of the program
 and explain the importance of each line.
+
+It has an alarm for 10 seconds, 20 seconds and 60 seconds after the program starts running. Once the alarm has been triggered, it's snoozed for however many seconds it originally took for the alarm to be triggered. The way it works is that it establishes that each alarm is x seconds after the starting time.time. Let's call this 'alarm time'. Once the current time is greater than the alarm time, it adds x seconds to the current time.time and that becomes the new alarm time.
+
+Line 5 is the starting amount of seconds for the alarms and Line 6 is the amount of seconds for each different alarm. Line 7 sets up the starting time to be the current time. Lines 8-10 set up the alarms to be the x seconds after the start time. Line 12 starts a while loop that just makes everything keep repeating itself. Line 13 is a for loop that is checking for any of the 3 alarms to be triggered. Line 14 establishes what the current time is during each loop. Line 15 is what is used to judge if an alarm has passed and Line 16 lets us know that the alarm has passed. Line 17 sets up a new alarm x seconds from the current time. Line 18 pauses the program for 1 second. Line 19 lets us know how much time has passed since the program started running.
