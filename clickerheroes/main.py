@@ -82,7 +82,7 @@ def boss():
         for i in (0,8):
             click()
         nextarea()
-        time.sleep(10)
+        time.sleep(5)
         try:
             pyautogui.locateOnScreen('bossclock.png', grayscale = False, confidence = 0.8)
             try:
@@ -131,6 +131,7 @@ c = True
 u = True
 hp = True
 while c == True:
+    pyautogui.FAILSAFE = True
     u = True
     hp = True
     click()
